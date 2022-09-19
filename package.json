@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liantisit-art2/ZH.git"
+    "url": "git+git@github.com/davidbouckaert/rabbitHelpers.git"
   },
   "keywords": [
     "ZEPHYR"
@@ -21,9 +21,9 @@
   "author": "David Bouckaert",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/liantisit-art2/ZH/issues"
+    "url": "https://github.com/davidbouckaert/rabbitHelpers/issues"
   },
-  "homepage": "https://github.com/liantisit-art2/ZH#readme",
+  "homepage": "https://github.com/davidbouckaert/rabbitHelpers#readme",
   "dependencies": {
     "@types/chai": "^4.3.3",
     "awesome-typescript-loader": "^5.2.1",
