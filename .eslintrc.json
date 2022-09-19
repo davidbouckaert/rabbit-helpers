@@ -1,24 +1,24 @@
 {
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "prettier"],
-  "rules": {
-    "prettier/prettier": [
-      "warn",
-      {
-        "endOfLine": "auto"
-      }
-    ],
-    "quotes": [2, "single"],
-    "no-console": "off"
-  },
+
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"], // Your TypeScript files extension
-      "extends": [
-        "airbnb-base", "airbnb-typescript/base","prettier"],
+      "extends": ["airbnb-base", "airbnb-typescript/base", "prettier"],
+      "rules": {
+        "prettier/prettier": [
+          "warn",
+          {
+            "endOfLine": "auto"
+          }
+        ],
+        "quotes": [2, "single"],
+        "no-console": "off"
+      },
 
       "parserOptions": {
-        "project": ["./ZH/tsconfig.json"] // Specify it only for TypeScript files
+        "project": ["tsconfig.json"] // Specify it only for TypeScript files
       }
     }
   ]

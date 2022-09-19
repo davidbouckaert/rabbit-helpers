@@ -1,7 +1,8 @@
 export {
-  init,
-  getAllTestcases,
-  updateTestResult,
-  createNewTestrun,
-  softAssert,
-} from './zephyrHelpers';
+  publishMsg,
+  createNewQueue,
+  deleteQueue,
+  bindQueue,
+  getMessagesFromQueue,
+  init
+} from './rabbitHelpers';
