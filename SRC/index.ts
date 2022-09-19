@@ -5,4 +5,5 @@ export {
   bindQueue,
   getMessagesFromQueue,
   initRabbitHelpers,
+  getQueueDetails,
 } from './rabbitHelpers';

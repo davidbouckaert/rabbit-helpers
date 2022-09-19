@@ -6,6 +6,7 @@ import { PublishMessage } from './interfaces/publish-message.interface';
 import { defaultVariables, Variables } from './interfaces/variables.interface';
 import { RabbitConfig } from './interfaces/rabbit-config.interface';
 import { Messages } from './interfaces/messages-interface';
+import { QueueDetails } from './interfaces/queue-details.interface';
 
 const variables: Variables = defaultVariables;
 
@@ -16,7 +17,7 @@ const variables: Variables = defaultVariables;
 export const initRabbitHelpers = async (rabbitConfig: RabbitConfig) => {
   variables.username = rabbitConfig.username;
   variables.password = rabbitConfig.password;
-}
+};
 
 /**
  * This function publishes a message onto an Entity using the RabbitMQ API
@@ -138,6 +139,28 @@ export const bindQueue = async ({
   } catch (error) {
     console.log(error);
   }
+};
+
+export const getQueueDetails = async ({
+  server,
+  vhost,
+  queueName,
+}: QueueParams): Promise<QueueDetails> => {
+  let queue: QueueDetails;
+  try {
+    await request(server)
+      .get(`/api/queues/${vhost}/${queueName}`)
+      .auth(variables.username, variables.password)
+      .then((res) => {
+        queue = res.body;
+      });
+  } catch (error) {
+    console.log(
+      `ERROR: [getQueueDetails] - No queue found on vhost: ${vhost}, with name: ${queueName}`,
+      error
+    );
+  }
+  return queue;
 };
 
 /**
