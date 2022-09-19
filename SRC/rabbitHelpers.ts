@@ -13,7 +13,7 @@ const variables: Variables = defaultVariables;
  * This function sets a range of variables the Rabbit module uses
  * @param {RabbitConfig} rabbitConfig
  */
-export const init = async (rabbitConfig: RabbitConfig) => {
+export const initRabbitHelpers = async (rabbitConfig: RabbitConfig) => {
   variables.username = rabbitConfig.username;
   variables.password = rabbitConfig.password;
 }

@@ -4,5 +4,5 @@ export {
   deleteQueue,
   bindQueue,
   getMessagesFromQueue,
-  init
+  initRabbitHelpers,
 } from './rabbitHelpers';
