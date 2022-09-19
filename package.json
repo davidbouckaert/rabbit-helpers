@@ -1,7 +1,7 @@
 {
-  "name": "@dbouckaert/zh",
-  "version": "1.1.14",
-  "description": "Zephyr Helpers: uploading test results to Zephyr.",
+  "name": "@dbouckaert/rabbit-helpers",
+  "version": "1.0.0",
+  "description": "Rabbit Helpers: uploading test results to Zephyr.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+git@github.com/davidbouckaert/rabbitHelpers.git"
+    "url": "git+git@github.com:davidbouckaert/rabbit-helpers.git.git"
   },
   "keywords": [
     "ZEPHYR"
@@ -21,9 +21,9 @@
   "author": "David Bouckaert",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davidbouckaert/rabbitHelpers/issues"
+    "url": "https://github.com:davidbouckaert/rabbit-helpers.git/issues"
   },
-  "homepage": "https://github.com/davidbouckaert/rabbitHelpers#readme",
+  "homepage": "https://github.com:davidbouckaert/rabbit-helpers.git#readme",
   "dependencies": {
     "@types/chai": "^4.3.3",
     "awesome-typescript-loader": "^5.2.1",
