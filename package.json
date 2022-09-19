@@ -1,6 +1,6 @@
 {
-  "name": "rabbit-mq-checks",
-  "version": "1.0.2",
+  "name": "@dbouckaert/rabbit-helpers",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,8 +10,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "David Bouckaert",
+  "license": "MIT",
   "dependencies": {
     "@types/chai": "^4.3.3",
     "awesome-typescript-loader": "^5.2.1",
